@@ -20,12 +20,10 @@ const App = () => {
       </GridItem>
       <Show above="lg">
         <GridItem area="aside" paddingX={2}>
-          Aside
           <GenreList />
         </GridItem>
       </Show>
       <GridItem area="main">
-        Main
         <GameGrid />
       </GridItem>
     </Grid>
