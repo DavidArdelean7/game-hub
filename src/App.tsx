@@ -42,9 +42,9 @@ const App = () => {
         </GridItem>
       </Show>
       <GridItem area="main">
-        <Box paddingX={{ base: 5, md: 10 }} flexWrap="wrap" width="100%">
+        <Box paddingX={{ base: 3, md: 10 }}>
           <GameHeading gameQuery={gameQuery} />
-          <HStack gap={5}>
+          <HStack>
             <PlatformSelector
               selectedPlatform={gameQuery.platform}
               onSelectPlatform={(platform) =>
@@ -56,9 +56,9 @@ const App = () => {
               onSelectOrder={(order) => setGameQuery({ ...gameQuery, order })}
             />
           </HStack>
-        </Box>
 
-        <GameGrid gameQuery={gameQuery} />
+          <GameGrid gameQuery={gameQuery} />
+        </Box>
       </GridItem>
     </Grid>
   );
