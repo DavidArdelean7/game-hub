@@ -42,7 +42,7 @@ const App = () => {
         </GridItem>
       </Show>
       <GridItem area="main">
-        <Box paddingX={10}>
+        <Box paddingX={{ base: 5, md: 10 }} flexWrap="wrap" width="100%">
           <GameHeading gameQuery={gameQuery} />
           <HStack gap={5}>
             <PlatformSelector
