@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import APIClient from "../services/api-client";
 import { CACHE_GENRES_KEY, GENRES_ENDPOINT } from "../constants";
-import { FetchResponse } from "../services/api-client";
 import genres from "../data/genres";
 
 interface Game {
@@ -25,7 +24,7 @@ const useGenres = () => {
     queryKey: CACHE_GENRES_KEY,
     queryFn: apiCLient.getAll,
     staleTime: 24 * 60 * 60 * 1000, //24h,
-    initialData: { count: genres.length, results: genres },
+    initialData: { count: genres.length, results: genres, next: null },
   });
 };
 // const useGenres = () => ({ data: genres, isLoading: false, error: null });
