@@ -2,6 +2,7 @@ import { QueryKey, useQuery } from "@tanstack/react-query";
 import { CACHE_PLATFORM_KEY, PLATFORMS_ENDPOINT } from "../constants";
 import platforms from "../data/platforms";
 import APIClient, { FetchResponse } from "../services/api-client";
+import ms from "ms";
 
 export interface Platform {
   id: number;
@@ -13,7 +14,7 @@ const usePlatforms = () => {
   return useQuery<FetchResponse<Platform>, Error>({
     queryKey: [CACHE_PLATFORM_KEY],
     queryFn: apiClient.getAll,
-    staleTime: 24 * 60 * 60 * 1000,
+    staleTime: ms("1 day"),
     initialData: { count: platforms.length, results: platforms, next: null },
   });
 };

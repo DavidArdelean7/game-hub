@@ -3,6 +3,7 @@ import { GameQuery } from "../App";
 import { CACHE_GAMES_KEY, GAMES_ENDPOINT } from "../constants";
 import APIClient, { FetchResponse } from "../services/api-client";
 import { Platform } from "./usePlatforms";
+import ms from "ms";
 
 export interface Game {
   id: number;
@@ -28,7 +29,7 @@ const useGames = (gameQuery: GameQuery) => {
           page: pageParam,
         },
       }),
-    staleTime: 24 * 60 * 60 * 1000,
+    staleTime: ms("1 day"),
     getNextPageParam: (lastPage, allPages) => {
       return lastPage.next ? allPages.length + 1 : undefined;
     },
