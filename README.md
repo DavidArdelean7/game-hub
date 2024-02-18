@@ -6,4 +6,4 @@ For the next steps, I am going to implement caching, infinite scrolling (game li
 
 The application can be previewed by accessing this link: https://davidardelean7.github.io/game-hub/ .
 
-I am still learning, but I am so elated because I finally found something that I really like (in terms of coding).
+I am still learning, but I am so elated because I discovered something that I really like.
