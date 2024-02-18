@@ -5,5 +5,3 @@ This project was created using Vite, React + TypeScript, while the styling was d
 For the next steps, I am going to implement caching, infinite scrolling (game list), better state management and routing (game single page).
 
 The application can be previewed by accessing this link: https://davidardelean7.github.io/game-hub/ .
-
-I am still learning, but I am so elated because I discovered something that I really like.
