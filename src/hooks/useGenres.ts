@@ -3,7 +3,7 @@ import APIClient from "../services/api-client";
 import { CACHE_GENRES_KEY, GENRES_ENDPOINT } from "../constants";
 import genres from "../data/genres";
 import ms from "ms";
-import { Genre } from "../entities/Genre";
+import Genre from "../entities/Genre";
 
 export interface Game {
   id: number;

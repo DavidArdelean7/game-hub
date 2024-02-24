@@ -3,7 +3,7 @@ import ms from "ms";
 import { CACHE_PLATFORM_KEY, PLATFORMS_ENDPOINT } from "../constants";
 import platforms from "../data/platforms";
 import APIClient, { FetchResponse } from "../services/api-client";
-import { Platform } from "../entities/Platform";
+import Platform from "../entities/Platform";
 
 const apiClient = new APIClient<Platform>(PLATFORMS_ENDPOINT);
 const usePlatforms = () => {

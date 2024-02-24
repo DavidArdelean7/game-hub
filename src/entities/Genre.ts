@@ -1,6 +1,6 @@
 import { Game } from "../hooks/useGenres";
 
-export interface Genre {
+export default interface Genre {
   games: Game[];
   id: number;
   image_background: string;
