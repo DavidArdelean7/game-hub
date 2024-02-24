@@ -17,7 +17,6 @@ const SortingFilter = () => {
   const selectedOrderLabel = orderMapping.find(
     (o) => o.value === selectedSortOrder
   )?.label;
-  console.log("ORDER", selectedOrderLabel);
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
