@@ -1,8 +1,8 @@
-import { QueryKey, useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
+import ms from "ms";
 import { CACHE_PLATFORM_KEY, PLATFORMS_ENDPOINT } from "../constants";
 import platforms from "../data/platforms";
 import APIClient, { FetchResponse } from "../services/api-client";
-import ms from "ms";
 
 export interface Platform {
   id: number;
