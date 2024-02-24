@@ -3,19 +3,12 @@ import APIClient from "../services/api-client";
 import { CACHE_GENRES_KEY, GENRES_ENDPOINT } from "../constants";
 import genres from "../data/genres";
 import ms from "ms";
+import { Genre } from "../entities/Genre";
 
-interface Game {
+export interface Game {
   id: number;
   slug: string;
   name: string;
-}
-
-export interface Genre {
-  games: Game[];
-  id: number;
-  image_background: string;
-  name: string;
-  slug: string;
 }
 
 //const useGenres = ()=>useData<Genre>('/genres');
