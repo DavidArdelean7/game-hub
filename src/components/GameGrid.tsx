@@ -22,6 +22,7 @@ const GameGrid = () => {
         next={fetchNextPage}
         hasMore={!!hasNextPage}
         loader={<Spinner />}
+        style={{ overflow: "visible" }}
       >
         <SimpleGrid
           mt={10}
