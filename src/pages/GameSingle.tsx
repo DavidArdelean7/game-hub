@@ -1,6 +1,7 @@
+import { Box, Heading, Spinner } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
+import ShowMore from "../components/ExpandableText";
 import useGame from "../hooks/useGame";
-import { Heading, Spinner, Text } from "@chakra-ui/react";
 
 const GameSingle = () => {
   const { slug } = useParams();
@@ -15,7 +16,7 @@ const GameSingle = () => {
   return (
     <>
       <Heading>{game.name}</Heading>
-      <Text>{game.description_raw}</Text>
+      <ShowMore limit={100}>{game.description_raw}</ShowMore>
     </>
   );
 };
