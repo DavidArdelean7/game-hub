@@ -11,7 +11,7 @@ interface Props {
 }
 const GameCard = ({ game }: Props) => {
   return (
-    <Link to={`/games/` + game.slug}>
+    <Link to={`/game-hub/games/` + game.slug}>
       <Card borderRadius={20} boxShadow="none" height="100%">
         <Image src={getCroppedImageUrl(game.background_image)} width="100" />
         <CardBody>

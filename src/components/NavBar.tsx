@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <HStack justifyContent="space-between" padding="10px">
-      <Link to="/">
+      <Link to="/game-hub">
         <Image src={logo} boxSize="60px" objectFit="cover" minWidth="60px" />
       </Link>
       <SearchInput />
