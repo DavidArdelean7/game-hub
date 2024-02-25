@@ -2,6 +2,6 @@
 
 This project was created using Vite, React + TypeScript, while the styling was done using ChakraUI, and the data was fetched using the API from rawg.io.
 
-For the next steps, I am going to implement caching, infinite scrolling (game list), better state management and routing (game single page).
+Caching is implemented using React Query library and infinite scroll, also I have used Zustand for better state management which is a simple, no-boilerplate react library. Besides that, I added routing using React Router.
 
 The application can be previewed by accessing this link: https://davidardelean7.github.io/game-hub/ .
