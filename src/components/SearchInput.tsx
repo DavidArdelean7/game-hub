@@ -25,6 +25,7 @@ const SearchInput = () => {
         <Input
           ref={ref}
           borderRadius={20}
+          boxShadow=" 0px 0px 40px 4px rgba(0,0,0,0.14)"
           placeholder="Search games..."
           variant="field"
         ></Input>

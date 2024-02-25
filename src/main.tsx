@@ -7,7 +7,6 @@ import { RouterProvider } from "react-router-dom";
 import "./index.css";
 import router from "./routes.tsx";
 import theme from "./theme";
-
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

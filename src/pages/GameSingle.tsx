@@ -17,8 +17,8 @@ const GameSingle = () => {
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }}>
       <GridItem mb={5}>
-        <Heading>{game.name}</Heading>
-        <ExpandableText limit={500}>{game.description_raw}</ExpandableText>
+        <Heading mb={5}>{game.name}</Heading>
+        <ExpandableText limit={800}>{game.description_raw}</ExpandableText>
 
         <GameAttributes game={game} />
       </GridItem>

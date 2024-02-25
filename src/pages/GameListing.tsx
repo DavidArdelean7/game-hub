@@ -1,4 +1,4 @@
-import { Show, GridItem, HStack, Box, Grid } from "@chakra-ui/react";
+import { Show, GridItem, HStack, Box, Grid, Flex } from "@chakra-ui/react";
 import GameGrid from "../components/GameGrid";
 import GameHeading from "../components/GameHeading";
 import GenreList from "../components/GenreList";
@@ -26,10 +26,14 @@ const GameListing = () => {
         <GridItem area="main">
           <Box paddingX={{ base: 3, md: 10 }}>
             <GameHeading />
-            <HStack>
+            <Flex
+              gap={5}
+              flexDirection="row"
+              flexDir={{ base: "column", md: "row" }}
+            >
               <PlatformSelector />
               <SortingFilter />
-            </HStack>
+            </Flex>
 
             <GameGrid />
           </Box>
